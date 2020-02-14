@@ -1,0 +1,67 @@
+Data Base Designs
+
+     User Management
+         
+          example of entry         
+          Username(string Format)
+          Password(string Format)
+          Permission Level(Integer Format)
+          DateCreated(String Format)
+          isAdmin(Boolean)
+          
+          0 - Basic Functioing View Book,Search Books
+          1 - Issue Book,Return Book
+          2 - Delete Book
+          3 - Add User Manually,Delete Users Manually
+          4 - To Check Log Files
+          5 - To Sync Data Update Firmwares etc
+          
+          admin can Moderate permissions For Other users
+          
+     Book Database
+     
+          example of entry
+         IDNoofBook(string Alphanumeric)
+         ISBNCode(Numeric)
+         Bookname(string)
+         BookAuthor(string)
+         BookPublication(string)
+         dateAdded(string)
+         isLost(Boolean)
+         isIssued(Boolean)
+         isSold(Boolean)
+         isIssuedtoWhom(String)
+         
+     User Database (Each File For Each Person)
+         Book1
+         Book2...
+         (Currenly issued)
+     
+     Log File(History Of everything Done)
+     
+     example Of log data
+     
+     timetag:user qwerty signed in 
+     timetag:user Bought a book "abc"
+     timetag:user qwerty issued book "jkds"
+     timetag:user qwerty signed out
+     
+     timetag:user qwertyu signed in 
+     timetag:user qoughtu Manually added new user "jksd"
+     timetag:user qwertyu updated user "jksd" permission level to 2
+     timetag:user qwertyu signed out
+     
+     timetag:user qweryu signed in 
+     timetag:user qougu Manually synced Database
+     timetag:user qwertyu manually Updated Firmware
+     timetag:user qwertyu signed out
+    
+    Bill Copies
+    
+    Bill entries 
+    example Bill 1
+    
+    Book named "sv" sold to "skjnas"
+    at date 
+    of worth 133
+    
